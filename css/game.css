@@ -1,0 +1,128 @@
+html{
+	font-size: 12px;
+}
+html body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	background: black;
+}
+
+div,img{
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select:none;
+}
+body{
+	margin: 0;padding: 0;
+}
+
+#cover{
+	width: 1300px;height: 640px;
+	margin:0 auto;
+	position:relative;
+	border: solid 1px black;
+	overflow: hidden;
+}
+
+.page{
+	width: 100%;height: 100%;
+}
+
+#cover #start_page{
+	position: absolute;
+	left: 0;top: 0;
+	background:url(../img/startbg.jpg);
+	z-index: 30;
+	/*display: none;*/
+}
+#cover #start_page #startbtn{
+	width: 200px;
+	height: 75px;
+	background: orange;
+	margin: 300px auto;
+	display: block;
+}
+
+#cover #games_cene{
+	width: 100%;height: 100%;
+	position: absolute;
+	left: 0;top: 0;
+	background:url(../img/background.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+.game_ui{
+	width: 100%;height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+.game_ui #score_lable{
+	width: 200px;height: 100px;
+	line-height: 100px;
+	color: red;
+	font-family: "arial black";
+	font-size: 48px;
+	float: right;
+	text-align: center;
+	background: rgba(255,255,255,0.75);
+}
+.game_ui #role_hp_container{
+	width: 514px;height: 60px;
+	background: rgba(255,255,255,0.75);
+	background-image:url(../img/HP.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+	border: solid 1px white;
+}
+.game_ui #role_hp{
+	width: 420px;height: 20px;
+	background: red;
+	margin-top: 20px;
+	margin-left: 80px;
+	border-radius: 5px;
+}
+
+
+#game_over_page{
+	width: 100%;height: 100%;
+	position: absolute;
+	z-index: 20;
+	background: rgba(0,0,0,0.5);
+	display: none;
+}
+#game_over_page .over_cover{
+	width: 100%;height: 100%;
+	position: relative;
+	border: solid 1px black;
+}
+#game_over_page #over_panel{
+	width: 400px;
+	height: 300px;
+	background: white;
+	border-radius: 10px;
+	margin: 100px auto;
+}
+#game_over_page #over_panel #over_score{
+	width: 300px;height: 150px;
+	line-height: 150px;
+	text-align: center;
+	font-family: "arial black";
+	font-size: 60px;
+	color: red;
+	margin: 30px auto;
+	margin-top: 50px;
+}
+
+#game_over_page #over_panel #restartbtn{
+	width: 200px;
+	height: 100px;
+	background: url(../img/restart.png) no-repeat;
+	margin: 20px auto;
+	background-size: 100%;
+}
